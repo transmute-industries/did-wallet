@@ -1,0 +1,38 @@
+{
+  "id": "/assymetricWalletKey",
+  "type": "object",
+  "properties": {
+    "kid": {
+      "type": "string",
+      "example": "r6taTZsraX9WIK24MxFhLqo2zwGAf-pRiQhvCtgPQaU"
+    },
+    "type": {
+      "type": "string",
+      "example": "assymetric",
+      "enum": ["assymetric"]
+    },
+    "encoding": {
+      "type": "string",
+      "example": "hex",
+      "enum": ["hex"]
+    },
+    "publicKey": {
+      "type": "string",
+      "example": "037cb462083130f5c42ff2b15bc9eaa397386ae86d96045b89a5eec9ccccb2cbef"
+    },
+    "privateKey": {
+      "type": "string",
+      "example": "037cb462083130f5c42ff2b15bc9eaa397386ae86d96045b89a5eec9ccccb2cbef"
+    },
+    "tags": {
+      "type": "array",
+      "example": ["did:example:456"]
+    },
+    "notes": {
+      "type": "string",
+      "example": "Created in browser..."
+    }
+  },
+  "required": ["type", "encoding", "publicKey", "privateKey"],
+  "additionalProperties": false
+}

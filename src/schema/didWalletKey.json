@@ -1,0 +1,5 @@
+{
+  "id": "/didWalletKey",
+  "type": "object",
+  "oneOf": [{ "$ref": "/assymetricWalletKey" }]
+}
