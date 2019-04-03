@@ -1,6 +1,6 @@
 {
   "name": "@transmute/did-wallet",
-  "version": "1.0.0",
+  "version": "0.0.0-0",
   "description": "A simple javascript based key store built for DID and JSON-LD Signatures",
   "main": "./src/index.js",
   "scripts": {
