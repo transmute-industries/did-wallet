@@ -18,4 +18,32 @@ describe("addKey", () => {
 
     expect(wallet.keys).toMatchSnapshot();
   });
+
+  it("can addKey to existing wallet", () => {
+    let wallet = didWallet.create({
+      keys: [
+        {
+          type: "assymetric",
+          encoding: "hex",
+          publicKey: fixtures.secp256k1_keypair_0.publicKey,
+          privateKey: fixtures.secp256k1_keypair_0.privateKey,
+          tags: ["Secp256k1VerificationKey2018", "did:example:456", "A"],
+          notes: ""
+        }
+      ]
+    });
+
+    expect(wallet.keys).toMatchSnapshot();
+
+    wallet.addKey({
+      type: "assymetric",
+      encoding: "hex",
+      publicKey: fixtures.secp256k1_keypair_1.publicKey,
+      privateKey: fixtures.secp256k1_keypair_1.privateKey,
+      tags: ["Secp256k1VerificationKey2018", "did:example:456", "A"],
+      notes: ""
+    });
+
+    expect(wallet.keys).toMatchSnapshot();
+  });
 });
