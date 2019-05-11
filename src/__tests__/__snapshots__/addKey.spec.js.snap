@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addKey can addKey to empty wallet 1`] = `
+Object {
+  "WgGaIZApxh9aeV9K51GfGEMNEkgS6av5boqFZI0QHHA": Object {
+    "encoding": "hex",
+    "kid": "WgGaIZApxh9aeV9K51GfGEMNEkgS6av5boqFZI0QHHA",
+    "notes": "",
+    "privateKey": "68be85c3ca96c4f67056e57c1a6d9169734b54ab87ed9a853e349461da0e8c0e",
+    "publicKey": "0286cdfebc43519c64baf08017b9f14a66871ee907770e6bc8fcd62282ebc72dc0",
+    "tags": Array [
+      "Secp256k1VerificationKey2018",
+      "did:example:456",
+      "A",
+    ],
+    "type": "assymetric",
+  },
+}
+`;

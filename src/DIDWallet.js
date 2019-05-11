@@ -42,6 +42,33 @@ class DIDWallet {
     delete this.keys;
   }
 
+  addKey(key) {
+    if (!this.keys) {
+      throw new Error(
+        "Cannot addKey to a ciphered wallet. You must unlock first."
+      );
+    }
+
+    schema.validator.validate(key, schema.schemas.didWalletKey, {
+      throwError: true
+    });
+
+    let update = {};
+
+    switch (key.type) {
+      case "assymetric":
+        update = {
+          ...key,
+          kid: keyToKID(key.publicKey)
+        };
+    }
+
+    this.keys = {
+      ...this.keys,
+      [update.kid]: update
+    };
+  }
+
   unlock(password) {
     let key = password;
     let decrypt = crypto.createDecipher("aes256", key);
@@ -59,9 +86,7 @@ class DIDWallet {
       );
     }
     let keys = _.pickBy(this.keys, k => {
-      return (
-        _.intersection(k.tags, tags).length
-      );
+      return _.intersection(k.tags, tags).length;
     });
     return _.values(keys);
   }
