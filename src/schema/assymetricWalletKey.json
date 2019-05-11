@@ -14,7 +14,7 @@
     "encoding": {
       "type": "string",
       "example": "hex",
-      "enum": ["hex"]
+      "enum": ["hex", "application/pgp-keys"]
     },
     "publicKey": {
       "type": "string",
@@ -23,6 +23,10 @@
     "privateKey": {
       "type": "string",
       "example": "037cb462083130f5c42ff2b15bc9eaa397386ae86d96045b89a5eec9ccccb2cbef"
+    },
+    "revocationCertificate": {
+      "type": "string",
+      "example": "-----BEGIN PGP PUBLIC KEY BLOCK-----\r\nVersion: OpenPGP.js v4.4.7\r\nComment: https://openpgpjs.org\r\nComment: This is a revocation certificate\r\n\r\nwmEEIBMIAAkFAlzXC0sCHQAACgkQzgtOpEMyh2l39AEAqpcJQ2N5heHruMki\r\nBOwoXLLLd+UdbxqlVBG7Th5L/dQBAKBIcPgOk/Zv4PYVQpJr2VuG0eXZsjmZ\r\na3m/lC4l8Bj3\r\n=9bjx\r\n-----END PGP PUBLIC KEY BLOCK-----\r\n"
     },
     "tags": {
       "type": "array",

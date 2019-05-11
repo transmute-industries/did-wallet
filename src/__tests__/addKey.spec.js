@@ -37,9 +37,10 @@ describe("addKey", () => {
 
     wallet.addKey({
       type: "assymetric",
-      encoding: "hex",
-      publicKey: fixtures.secp256k1_keypair_1.publicKey,
-      privateKey: fixtures.secp256k1_keypair_1.privateKey,
+      encoding: "application/pgp-keys",
+      publicKey: fixtures.openpgpg_keypair_1.publicKey,
+      privateKey: fixtures.openpgpg_keypair_1.privateKey,
+      revocationCertificate: fixtures.openpgpg_keypair_1.revocationCertificate,
       tags: ["Secp256k1VerificationKey2018", "did:example:456", "A"],
       notes: ""
     });

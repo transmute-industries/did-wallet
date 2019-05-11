@@ -51,12 +51,56 @@ Object {
     ],
     "type": "assymetric",
   },
-  "tn9bnG13ice63PtY5Jh4Cg-9-EgfkFkfLO4Z2hI6ZGE": Object {
-    "encoding": "hex",
-    "kid": "tn9bnG13ice63PtY5Jh4Cg-9-EgfkFkfLO4Z2hI6ZGE",
+  "t2-Dccdwr6V65IKyMZeIMkF68V0mhW_y4I-5X4e0aZM": Object {
+    "encoding": "application/pgp-keys",
+    "kid": "t2-Dccdwr6V65IKyMZeIMkF68V0mhW_y4I-5X4e0aZM",
     "notes": "",
-    "privateKey": "00948f44e9e52943d83bd72620d9c79e4533f1d065f57e988bf9b1da1bfd0681",
-    "publicKey": "0249b2d0d92622bdf194a2af90f9d166e0dd324aff9b42c8727de90e887d76a4dc",
+    "privateKey": "-----BEGIN PGP PRIVATE KEY BLOCK-----
+Version: OpenPGP.js v4.4.7
+Comment: https://openpgpjs.org
+
+xXQEXNcLSxMFK4EEAAoCAwQ22JuKLOw0REjgH3KPldvpQLyPbevO6nd/vs/h
+UyBgRDFhB66eam0Kg0K/bFspd7EqBQf5sg4MjtW2g+UlMNuAAAEAtt9uYl73
+oEnh1lAB1SqGxc1o1c6C4lx4myXH3P+WRD4SgM0XYW5vbiA8YW5vbkBleGFt
+cGxlLmNvbT7CdwQQEwgAHwUCXNcLSwYLCQcIAwIEFQgKAgMWAgECGQECGwMC
+HgEACgkQzgtOpEMyh2mZagEA2Ns6nwoiR9gJHL9JaPtXxj+VfiNmFUm1plLq
+pwrbF3YBANJ4b7TYISUg66vt0M7tOXDdv6+h/h5+CoA6rcc9D+PXx3gEXNcL
+SxIFK4EEAAoCAwQ22JuKLOw0REjgH3KPldvpQLyPbevO6nd/vs/hUyBgRDFh
+B66eam0Kg0K/bFspd7EqBQf5sg4MjtW2g+UlMNuAAwEIBwABALbfbmJe96BJ
+4dZQAdUqhsXNaNXOguJceJslx9z/lkQ+EoDCYQQYEwgACQUCXNcLSwIbDAAK
+CRDOC06kQzKHaU29AP4gVir6ApAHt30I2MSq85BmefWc+G4xrJ2nGa/n6z+b
+lgEAyVCaBDm6V89IPk4GslVuIXZNIGaVxZUAPpGjjVD8fVg=
+=1jGv
+-----END PGP PRIVATE KEY BLOCK-----
+",
+    "publicKey": "-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: OpenPGP.js v4.4.7
+Comment: https://openpgpjs.org
+
+xk8EXNcLSxMFK4EEAAoCAwQ22JuKLOw0REjgH3KPldvpQLyPbevO6nd/vs/h
+UyBgRDFhB66eam0Kg0K/bFspd7EqBQf5sg4MjtW2g+UlMNuAzRdhbm9uIDxh
+bm9uQGV4YW1wbGUuY29tPsJ3BBATCAAfBQJc1wtLBgsJBwgDAgQVCAoCAxYC
+AQIZAQIbAwIeAQAKCRDOC06kQzKHaZlqAQDY2zqfCiJH2Akcv0lo+1fGP5V+
+I2YVSbWmUuqnCtsXdgEA0nhvtNghJSDrq+3Qzu05cN2/r6H+Hn4KgDqtxz0P
+49fOUwRc1wtLEgUrgQQACgIDBDbYm4os7DRESOAfco+V2+lAvI9t687qd3++
+z+FTIGBEMWEHrp5qbQqDQr9sWyl3sSoFB/myDgyO1baD5SUw24ADAQgHwmEE
+GBMIAAkFAlzXC0sCGwwACgkQzgtOpEMyh2lNvQD+IFYq+gKQB7d9CNjEqvOQ
+Znn1nPhuMaydpxmv5+s/m5YBAMlQmgQ5ulfPSD5OBrJVbiF2TSBmlcWVAD6R
+o41Q/H1Y
+=PfgI
+-----END PGP PUBLIC KEY BLOCK-----
+",
+    "revocationCertificate": "-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: OpenPGP.js v4.4.7
+Comment: https://openpgpjs.org
+Comment: This is a revocation certificate
+
+wmEEIBMIAAkFAlzXC0sCHQAACgkQzgtOpEMyh2l39AEAqpcJQ2N5heHruMki
+BOwoXLLLd+UdbxqlVBG7Th5L/dQBAKBIcPgOk/Zv4PYVQpJr2VuG0eXZsjmZ
+a3m/lC4l8Bj3
+=9bjx
+-----END PGP PUBLIC KEY BLOCK-----
+",
     "tags": Array [
       "Secp256k1VerificationKey2018",
       "did:example:456",

@@ -55,6 +55,10 @@ let webWallet = didWallet.create({
 });
 ```
 
+## Encoding and Standards
+
+- https://tools.ietf.org/html/rfc3156
+
 ## Developing
 
 ```
