@@ -14,7 +14,19 @@
     "encoding": {
       "type": "string",
       "example": "hex",
-      "enum": ["hex", "application/pgp-keys"]
+      "enum": ["hex", "application/pgp-keys", "application/x-pem-file"]
+    },
+    "didPublicKeyEncoding": {
+      "type": "string",
+      "example": "publicKeyPem",
+      "enum": [
+        "publicKeyPem",
+        "publicKeyJwk",
+        "publicKeyHex",
+        "publicKeyBase64",
+        "publicKeyBase58",
+        "publicKeyMultibase"
+      ]
     },
     "publicKey": {
       "type": "string",
