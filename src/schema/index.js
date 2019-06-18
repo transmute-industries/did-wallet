@@ -3,10 +3,12 @@ const { Validator } = require("jsonschema");
 const { stringify } = JSON;
 
 const assymetricWalletKey = require("./assymetricWalletKey.json");
+const mnemonicWalletKey = require("./mnemonicWalletKey.json");
 const didWalletKey = require("./didWalletKey.json");
 
 const schemas = {
   assymetricWalletKey,
+  mnemonicWalletKey,
   didWalletKey
 };
 

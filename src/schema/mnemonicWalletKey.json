@@ -1,0 +1,34 @@
+{
+  "id": "/mnemonicWalletKey",
+  "type": "object",
+  "properties": {
+    "kid": {
+      "type": "string",
+      "example": "r6taTZsraX9WIK24MxFhLqo2zwGAf-pRiQhvCtgPQaU"
+    },
+    "type": {
+      "type": "string",
+      "example": "mnemonic",
+      "enum": ["mnemonic"]
+    },
+    "encoding": {
+      "type": "string",
+      "example": "bip39",
+      "enum": ["bip39"]
+    },
+    "mnemonic": {
+      "type": "string",
+      "example": "panda lion unfold live venue spice urban member march gift obvious gossip"
+    },
+    "tags": {
+      "type": "array",
+      "example": ["did:example:456"]
+    },
+    "notes": {
+      "type": "string",
+      "example": "Created in browser..."
+    }
+  },
+  "required": ["type", "encoding", "mnemonic"],
+  "additionalProperties": false
+}

@@ -20,7 +20,7 @@ describe("create", () => {
         keys: [key]
       });
     } catch (e) {
-      expect(e.message).toBe("is not exactly one from </assymetricWalletKey>");
+      expect(e.message).toBe("is not exactly one from </assymetricWalletKey>,</mnemonicWalletKey>");
     }
   });
 

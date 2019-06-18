@@ -23,6 +23,11 @@ class DIDWallet {
               ...k,
               kid: keyToKID(k.publicKey)
             };
+          case "mnemonic":
+            return {
+              ...k,
+              kid: keyToKID(k.mnemonic)
+            };
         }
       });
     }
@@ -61,6 +66,13 @@ class DIDWallet {
           ...key,
           kid: keyToKID(key.publicKey)
         };
+        break;
+      case "mnemonic":
+        update = {
+          ...key,
+          kid: keyToKID(key.mnemonic)
+        };
+        break;
     }
 
     this.keys = {

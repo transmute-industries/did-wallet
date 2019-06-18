@@ -1,5 +1,8 @@
 {
   "id": "/didWalletKey",
   "type": "object",
-  "oneOf": [{ "$ref": "/assymetricWalletKey" }]
+  "oneOf": [
+    { "$ref": "/assymetricWalletKey" },
+    { "$ref": "/mnemonicWalletKey" }
+  ]
 }
