@@ -34,7 +34,50 @@ const exported_wallet_1 =
 const bip39_mnemonic_0 =
   "panda lion unfold live venue spice urban member march gift obvious gossip";
 
+const did_key_keypair_0 = {
+  passphrase: null,
+  controller: "did:key:z6MkqsWymkKhaUpP8hdcvYHn5Nx7nR3QcGFjimMV9r5XD86F",
+  type: "Ed25519VerificationKey2018",
+  privateKeyBase58:
+    "4S12gd6yhcsAw15peWj7a7Ca739W5BjFTAi4sYdMpCWGR2exvpmVX7bBiw3xj1cwSGxm8WHtmNSCZVicLa7wx2Tm",
+  publicKeyBase58: "CRFwBW5GEwKv2CnvEyKwEHQ7xqmZCP1P2kSZKa7WHuJs",
+  didDocument: {
+    "@context": "https://w3id.org/did/v1",
+    id: "did:key:z6MkqsWymkKhaUpP8hdcvYHn5Nx7nR3QcGFjimMV9r5XD86F",
+    publicKey: [
+      {
+        id: "did:key:z6MkqsWymkKhaUpP8hdcvYHn5Nx7nR3QcGFjimMV9r5XD86F",
+        type: "Ed25519VerificationKey2018",
+        controller: "did:key:z6MkqsWymkKhaUpP8hdcvYHn5Nx7nR3QcGFjimMV9r5XD86F",
+        publicKeyBase58: "CRFwBW5GEwKv2CnvEyKwEHQ7xqmZCP1P2kSZKa7WHuJs"
+      }
+    ],
+    authentication: [
+      "did:key:z6MkqsWymkKhaUpP8hdcvYHn5Nx7nR3QcGFjimMV9r5XD86F"
+    ],
+    assertionMethod: [
+      "did:key:z6MkqsWymkKhaUpP8hdcvYHn5Nx7nR3QcGFjimMV9r5XD86F"
+    ],
+    capabilityDelegation: [
+      "did:key:z6MkqsWymkKhaUpP8hdcvYHn5Nx7nR3QcGFjimMV9r5XD86F"
+    ],
+    capabilityInvocation: [
+      "did:key:z6MkqsWymkKhaUpP8hdcvYHn5Nx7nR3QcGFjimMV9r5XD86F"
+    ],
+    keyAgreement: [
+      {
+        id:
+          "did:key:z6MkqsWymkKhaUpP8hdcvYHn5Nx7nR3QcGFjimMV9r5XD86F#zC6su3aHcuiLzKsFGFJQYLMpcaeXkJs8CxX5T2qDHuQqfB",
+        type: "X25519KeyAgreementKey2019",
+        controller: "did:key:z6MkqsWymkKhaUpP8hdcvYHn5Nx7nR3QcGFjimMV9r5XD86F",
+        publicKeyBase58: "7PBLD6oiLbhtmCHntuyNCewHQFwMJRbTdC9zz8VWJbYy"
+      }
+    ]
+  }
+};
+
 module.exports = {
+  did_key_keypair_0,
   bip39_mnemonic_0,
   secp256k1_keypair_0,
   secp256k1_keypair_1,
