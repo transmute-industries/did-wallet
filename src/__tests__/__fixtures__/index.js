@@ -76,6 +76,8 @@ const did_key_keypair_0 = {
   }
 };
 
+const did_doc_jwks = require("./didDocJwks");
+
 module.exports = {
   did_key_keypair_0,
   bip39_mnemonic_0,
@@ -84,5 +86,6 @@ module.exports = {
   secp256k1_keypair_2,
   openpgpg_keypair_1,
   exported_wallet_0,
-  exported_wallet_1
+  exported_wallet_1,
+  did_doc_jwks
 };

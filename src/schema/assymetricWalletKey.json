@@ -15,6 +15,7 @@
       "type": "string",
       "example": "hex",
       "enum": [
+        "jwk",
         "hex",
         "application/pgp-keys",
         "application/x-pem-file",
