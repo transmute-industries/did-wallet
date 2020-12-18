@@ -40,7 +40,7 @@ class DIDWallet {
       throw new Error("Cannot lock an empty wallet.");
     }
     const plaintext = JSON.stringify(this.keys);
-    let encrypt = crypto.createCipher("aes256", key);
+    let encrypt = crypto.createCipher("aes-256-cbc", key);
     let encrypted = encrypt.update(plaintext, "utf8", "hex");
     encrypted += encrypt.final("hex");
     this.ciphered = base64url.encode(Buffer.from(encrypted, "hex"));
@@ -83,7 +83,7 @@ class DIDWallet {
 
   unlock(password) {
     let key = password;
-    let decrypt = crypto.createDecipher("aes256", key);
+    let decrypt = crypto.createDecipher("aes-256-cbc", key);
     const ciphertext = base64url.toBuffer(this.ciphered).toString("hex");
     let decrypted = decrypt.update(ciphertext, "hex", "utf8");
     decrypted += decrypt.final();
